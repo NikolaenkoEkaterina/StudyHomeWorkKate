@@ -9,6 +9,11 @@ import java.util.Scanner;
  * принимать числа от пользователя и выводить их сумму.
  */
 public class Task1 {
+
+    // 1. создай Enum с перечислениями всех сообщений которые ты используешь в System.out.println и используй их в выводе в консоль.
+    // Пример: HOW_MANY_NUMBER("Сколько чисел вы хотите ввести?") и так во всех задачах.
+
+
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
 
