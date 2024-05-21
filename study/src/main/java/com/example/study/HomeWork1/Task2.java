@@ -8,6 +8,8 @@ import java.util.Scanner;
  * программа должна вычислить и вывести среднее значение всех элементов массива.
  */
 public class Task2 {
+
+    // посмотри что будет если ввести буквы а не цифры. надо бы это тоже обработать как ты это делала в первой задаче
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите размер массива: ");
