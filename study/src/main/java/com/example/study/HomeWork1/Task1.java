@@ -10,12 +10,15 @@ import java.util.Scanner;
  */
 public class Task1 {
     public static void main(String[] args) {
+        Mistakes mistakes = Mistakes.NOT_A_NUMBER;
+        Mistakes mistakes1 = Mistakes.NOT_A_NUMBERS;
+
         Scanner console = new Scanner(System.in);
 
         System.out.println("Введите количество чисел: ");
 
         while (!console.hasNextInt()) {
-                System.out.println("Вы ввели не число! Введите число: ");
+                System.out.println(mistakes.getMistakes());
                 console.next(); //пропуск ввода
             }
         int quantity = console.nextInt();
@@ -25,7 +28,7 @@ public class Task1 {
         int sum = 0;
         for (int i = 0; i < quantity; i++) {
             while (!console.hasNextInt()) {
-                System.out.println("Вы ввели не числа! Введите числа: ");
+                System.out.println(mistakes1.getMistakes());
                 console.next();
             }
             int numbers = console.nextInt();
